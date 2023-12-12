@@ -1,0 +1,416 @@
+#title {
+  font-family: Inter;
+  background: linear-gradient(
+    to top,
+    rgba(234, 78, 0, 0.9) 6%,
+    rgba(255, 0, 187, 0.9) 15%,
+    rgba(25, 0, 255, 0.85) 30%,
+    rgba(0, 0, 0) 60%
+  );
+  /* Adjust the colors and shape as needed */
+  color: #fff; /* Text color on the gradient background */
+  width: 100vw;
+}
+/* Change the color of the Font Awesome hamburger menu icon */
+.fa-solid.fa-bars {
+    color: rgb(203, 202, 202);
+    font-size: 20px; /* Set the desired font size */
+}
+.fa-solid.fa-bars:hover {
+    color: rgba(25, 0, 255, 0.85);
+}
+.title {
+  font-family: Mixta Sharp;
+  color: rgb(203, 202, 202);
+  font-size: 8dvw;
+  margin-left: 100px;
+  margin-top: 0;
+}
+
+
+
+
+body {
+  background-color: black;
+}
+#about {
+  background: linear-gradient(
+    to bottom,
+    rgba(234, 78, 0, 0.9) 3%,
+    rgba(141, 50, 5, 0.7) 15%,
+    rgba(0, 0, 0, 0.8) 60%
+  );
+  padding: 20px; /* Add padding if needed */
+  padding-top: 200px;
+  padding-bottom: 100px;
+  color: white;
+  width: 100vw;
+}
+h2 {
+  font-family: Mixta Sharp;
+  font-size: 8vw;
+}
+.skills-row {
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+.skills {
+  text-align: center;
+  color: white; /* Set text color to dark */
+  font-family: orpheuspro, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 8vw;
+}
+
+/* Carousel image sizes */
+#hobbyCarousel {
+  max-width: 400px;
+  margin-left: 100px;
+}
+
+#hobbyCarousel img {
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.carousel-slide {
+  overflow: hidden;
+  height: 500px; /* Set the height to auto to match the image height */
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  flex-direction: column;
+  height: 500px; /* Set the height to auto to match the image height */
+  transition: transform 0.6s ease; /* Smooth transition effect for the entire carousel */
+}
+
+.carousel-item {
+  width: 100%;
+  text-align: center;
+  border-radius: 50%;
+  margin: 10px;
+  transition: transform 0.6s ease; /* Smooth transition effect for individual items */
+}
+
+/* Optional: Add styles for carousel caption */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.featured-art {
+  align-content: right;
+  margin-left: 70px;
+}
+
+.text-center {
+  text-align: Inter;
+  color: white;
+  font-family: orpheuspro, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 8vw;
+}
+
+.nav-item {
+  margin: 20px;
+}
+.nav-link {
+  color: rgb(174, 173, 185);
+  font-size: 18px;
+  text-align: right;
+}
+.nav-link:hover {
+  color: rgba(25, 0, 255, 0.85);
+}
+
+#image-gallery {
+  background-color: black;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-container {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5px;
+  
+}
+
+.photo-container img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(
+    25,
+    0,
+    255,
+    0.8
+  ); /* Adjust the RGB values and alpha as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: Mixta Sharp;
+}
+
+.photo-container:hover .overlay {
+  opacity: 1; /* Make the text fully opaque on hover */
+  background-color: rgba(
+    25,
+    0,
+    255,
+    0.7
+  ); /* Set the alpha to 0 for a fully transparent background */
+  font-family: Mixta Sharp;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+#title{
+    font-size: 2vw;
+}
+
+  .column {
+    flex: 50%;
+    max-width: 50%;
+    align-items: center;
+  }
+  .featured-art{
+    order:1;
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Set the height to auto to match the image height */
+    transition: transform 0.6s ease; /* Smooth transition effect for the entire carousel */
+    margin-left: 20px;
+  }
+  .art-title{
+    text-align: center;
+  }
+  .proficient{
+    order:2;
+  }
+  .learning{
+    order:3
+  }
+ 
+  li{
+    font-size: 3vw;
+  }
+  .award-text{
+  
+    margin-left: 100px;
+    }
+  
+    .fluid-box {
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+  }
+  
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .featured-art{
+    order:1;
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Set the height to auto to match the image height */
+    transition: transform 0.6s ease; /* Smooth transition effect for the entire carousel */
+    margin-left: 5px;
+  }
+  .art-title{
+    text-align: center;
+  }
+  .proficient{
+    order:2;
+  }
+  .learning{
+    order:3
+  }
+  .Self-description{
+    font-size: 3vw;
+  }
+  li{
+    font-size: 4vw;
+  }
+  .award-text{
+  
+    margin-left: 0px;
+    }
+    .fluid-box {
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+  }
+}
+.card-body{
+  height:200px;
+}
+.card-title{
+  font-family: Mixta Sharp;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.card-title:hover{
+  color:rgba(25, 0, 255, 0.85);
+}
+.card-text{
+  font-family: Inter;
+}
+.card-deck {
+  margin-bottom: 320px;
+}
+.card-image-top{
+  border-radius: 25px;
+}
+.image-modify{
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.info{
+  margin-bottom: 60px;
+  height:fit-content;
+}
+.card-footer{
+  width:auto;
+  height:auto;
+}
+
+
+.pfp {
+  border-radius: 40%;
+  width: 80%;
+  margin-left: 70px;
+}
+.Self-description {
+  font-family: Mixta Sharp;
+  font-size: 35px;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  display: block;
+  font-family: Mixta Sharp;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  background-color: white; /* Default background color */
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: rgba(25, 0, 255, 0.85);
+}
+
+.custom-link {
+  color: black;
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  color: white;
+}
+
+#awards{
+  margin-top: 230px;
+  font-family: Inter;
+  color:white;
+  text-align: left;
+}
+h3{
+  font-family: Mixta Sharp;
+  margin-left: 150px;
+  font-weight: bold;
+  color:rgba(25, 0, 255, 0.85) ;
+}
+.award-text{
+  
+margin-left: 150px;
+}
+.award-description{
+  margin-left: 150px;
+  font-weight: lighter;
+}
+.indented {
+  padding-left: 20px;
+}
+
+/*Footer section*/
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+  font-family: Inter;
+}
+.social-icon {
+  margin: 20px 10px;
+  color:white;
+}
+
+.empty-space {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    /* Transparent at the top */ rgba(234, 78, 0, 0.9) 25%,
+    /* Orange with 90% opacity */ rgba(255, 0, 187, 0.9) 40%,
+    /* Pink with 90% opacity */ rgba(25, 0, 255, 0.85) 70%,
+    /* Purple with 85% opacity */ rgba(0, 0, 0, 0)
+      /* Transparent at the bottom */
+  );
+  height: 100vh; /* 100% of the viewport height */
+  width: 100vh; /* 100% of the parent container's width (in this case, the viewport) */
+  min-height: 100vh; /* Minimum height to cover the viewport */
+  background-size: cover; /* Cover the entire viewport while maintaining aspect ratio */
+}
+
